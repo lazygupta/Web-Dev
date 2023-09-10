@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+body{
+    font-family: 'REM', sans-serif;
+    
+    line-height: 2em;
+    
+    background-image: url("../images/moroccan-flower.png");
+    
+}
+
+.ourContent{
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+    @media (max-width: 768px) {
+      max-width: 400;
+      /* padding-left: 2rem; */
+    }
+}
+
+.para{
+  padding: 2rem;
+  /* margin: 2rem; */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+  
+li {
+    float: left;
+    padding-left: 0rem;
+}
+
+  .active {
+    background-color: orange;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
