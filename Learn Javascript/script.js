@@ -1,4 +1,4 @@
-console.log("Hello Ankit");
+// console.log("Hello Ankit");
 
 // food= 20
 // tip= 0.2
@@ -92,7 +92,7 @@ console.log("Hello Ankit");
 // console.log(temp);
 
 
-const phrase = "My name is Ankit"
+const phrase = "Ankit"
 
 const display = (phrase) =>{
   let res=[]
@@ -103,5 +103,5 @@ const display = (phrase) =>{
 }
 
 let final = display(phrase)
+
 console.log(final) 
-console.log("Hii")
