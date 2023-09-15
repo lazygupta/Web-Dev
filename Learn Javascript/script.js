@@ -43,12 +43,12 @@ console.log("Hello Ankit");
 // #Objects
 
 const person = {
-    name1: 'Johnny Depp' ,
-    name2: 'DiCaprio',
-    age: '20',
-    Blood_Group: 'B+',
-    phone: '91-4201-6559'
-}
+  name1: "Johnny Depp",
+  name2: "DiCaprio",
+  age: "20",
+  Blood_Group: "B+",
+  phone: "91-4201-6559",
+};
 
 // console.log(person.age)
 // console.log(person.name1)
@@ -56,17 +56,36 @@ const person = {
 
 // console.log(person)
 
-const introducer = (name , age) => {
+// const introducer = (name , age , sal , spend) => {
 
-    const person = {
-        name: name + ' Gupta',
-        age: age + ' Years'
-    }
+//     const person = {
+//         name: name ,
+//         age: age + ' Years',
+//         salary : sal,
+//         spends: spend,
+//         savings : function() {
+//             return person.salary - person.spends
+//         }
+//     }
 
-    const intro = `Hi, my name is ${person.name} and my age is ${person.age}`
+//     const intro = `Hi, my name is ${person.name}\nAge is ${person.age}\nSavings is ${person.savings()}`
 
-    return intro
+//     return intro
+// }
+
+// console.log(introducer ('Ankit' , 21 , 20000 , 5000))
+// console.log(introducer ('Arya' , 20 , 60000 , 20000 ))
+
+const double = (numbers) => {
+  let result = []
+  for (const number of numbers) {
+    result.push(number * number)
+  }
+
+  return result
 }
 
+const temp = double([1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1,2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2,3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6])
 
-console.log(introducer ('Ankit' , 20))
+console.log(temp);
+console.log(temp.length);
