@@ -42,13 +42,13 @@ console.log("Hello Ankit");
 
 // #Objects
 
-const person = {
-  name1: "Johnny Depp",
-  name2: "DiCaprio",
-  age: "20",
-  Blood_Group: "B+",
-  phone: "91-4201-6559",
-};
+// const person = {
+//   name1: "Johnny Depp",
+//   name2: "DiCaprio",
+//   age: "20",
+//   Blood_Group: "B+",
+//   phone: "91-4201-6559",
+// };
 
 // console.log(person.age)
 // console.log(person.name1)
@@ -76,16 +76,32 @@ const person = {
 // console.log(introducer ('Ankit' , 21 , 20000 , 5000))
 // console.log(introducer ('Arya' , 20 , 60000 , 20000 ))
 
-const double = (numbers) => {
-  let result = []
-  for (const number of numbers) {
-    result.push(number * number)
-  }
+// const double = (numbers) => {
+//   let result = []
+//   for (const number of numbers) {
+//     result.push(number * num)
+//   }
 
-  return result
+//   return result
+// }
+
+// let num = prompt("Enter the number")
+
+// const temp = double([1, 2, 3, 4, 5, 6],num)
+
+// console.log(temp);
+
+
+const phrase = "My name is Ankit"
+
+const display = (phrase) =>{
+  let res=[]
+  for( letter in phrase){
+    res.push(Number(letter)+1)
+  }
+  return res
 }
 
-const temp = double([1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1,2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2,3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6])
-
-console.log(temp);
-console.log(temp.length);
+let final = display(phrase)
+console.log(final) 
+console.log("Hii")
