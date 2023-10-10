@@ -103,7 +103,7 @@
 //     res.push(w)
 //   }
 
-  
+
 //   return res
 // }
 
@@ -136,11 +136,66 @@
 // let hour = prompt("Enter the hours")
 
 // const howManySeconds =(hours) => {
-  
+
 //   return hours*60*60
 // }
 
 // console.log(`The hours to seconds = ${howManySeconds(hour)}`);
 
 //Topics: Variables,functions, Math
+
+// const res[] = "Ankit Arya Ankit Ankit kir"
+
+// const frequency = (phrase) => {
+//   let freq = {}
+//   for( const letter of phrase){
+//     if(letter in freq) freq[letter]+=1
+//     else freq[letter] = 1 
+//   }
+//   return freq
+// }
+
+
+// const wordFrequency = (sentence ) => {
+//   const words = sentence.split(' ')
+//   return frequency(words)
+// }
+
+
+// console.log(wordFrequency(res))
+
+// .map()
+
+[1, 2, 4, 5, 6, 7].map(number => {
+  // console.log(number)
+})
+
+
+// .filter()
+
+const nums = [1, 2, 3, 5, 6, 78, 9]
+nums.filter(num => num >=2 && num<=8)
+
+const actors = [
+  {name: 'johnny', networth: 200000},
+  {name: 'Ankit', networth:7000},
+  {name: 'Leo', networth:1000000},
+  {name: 'Leos', networth:234000},
+  {name: 'Leon', networth:46000},
+  {name: 'Leom', networth:770000},
+  {name: 'Leok', networth:723000},
+  {name: 'Leou', networth:70070}
+]
+
+const func = (actors) => {
+  let res = []
+  actors.filter( num => {
+    if(num.networth < 1000000){
+      res.push(num.name)
+    }
+  })
+  return res
+}
+
+console.log(func(actors))
 
