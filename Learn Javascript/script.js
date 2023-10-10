@@ -92,27 +92,55 @@
 // console.log(temp);
 
 
-const phrase = "Ankit"
+// const phrase = "My name is ankit and my college name is cucek"
 
-const display = (phrase) =>{
-  let res=[]
-  for( letter of phrase){
-    res.push(letter)
-  }
-  return res
-}
+// const display = (phrase) =>{
+//   var res = []
+
+//   const word = phrase.split(' ')
+
+//   for( const w of word){
+//     res.push(w)
+//   }
+
+  
+//   return res
+// }
+
+// console.log(display(phrase));
 // let res = prompt("What is that")
 // let final = display(res)
 
-const sumArray = (numbers) =>{
-  let result =0;
-  for(num of numbers){
-    console.log(num)
-    result+=num;
-  }
-  return {Sum : result}
-}
+// const sumArray = (numbers) =>{
+//   let result =0;
+//   for(num of numbers){
+//     console.log(num)
+//     result+=num;
+//   }
+//   return {Sum : result}
+// }
 
-const number = [1,2,3,4,5]
+// const number = [1,2,3,4,5]
 
-console.log(sumArray(number))
+// console.log(sumArray(number))
+
+
+// Test you code by forking this repl: 
+// 👉 https://replit.com/@CleverLance/ConvertHoursToSeconds#solution.js
+
+// Solution 👉 https://www.loom.com/share/3de1aa5d007047ef82652530f04600b1
+
+// Write a function that takes a parameter (hours) and converts
+// it to seconds
+
+// let hour = prompt("Enter the hours")
+
+// const howManySeconds =(hours) => {
+  
+//   return hours*60*60
+// }
+
+// console.log(`The hours to seconds = ${howManySeconds(hour)}`);
+
+//Topics: Variables,functions, Math
+
