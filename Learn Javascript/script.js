@@ -96,12 +96,23 @@ const phrase = "Ankit"
 
 const display = (phrase) =>{
   let res=[]
-  for( letter in phrase){
-    res.push(Number(letter)+1)
+  for( letter of phrase){
+    res.push(letter)
   }
   return res
 }
+// let res = prompt("What is that")
+// let final = display(res)
 
-let final = display(phrase)
+const sumArray = (numbers) =>{
+  let result =0;
+  for(num of numbers){
+    console.log(num)
+    result+=num;
+  }
+  return {Sum : result}
+}
 
-console.log(final) 
+const number = [1,2,3,4,5]
+
+console.log(sumArray(number))
