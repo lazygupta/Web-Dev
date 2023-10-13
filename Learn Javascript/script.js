@@ -190,12 +190,16 @@ const actors = [
 const func = (actors) => {
   let res = []
   actors.filter( num => {
-    if(num.networth < 1000000){
-      res.push(num.name)
+    if(num.networth < 1000000000){
+      res.push(`${num.name}: ${num.networth}`)
     }
   })
   return res
 }
 
-console.log(func(actors))
+let result = func(actors)
+console.log(result)
+
+// let names = result.map (actor => actor).join(', ')
+// app.innerHTML = `<h1>${names}</h1>`
 
