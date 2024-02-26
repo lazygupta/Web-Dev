@@ -9,6 +9,8 @@ accemail = "ankit@gmail.com"
 accpass = "2121"
 acccity = "Alleppey"
 
-// console.log(accid)
+console.log("accid")
 
 console.log([accid,accemail,accpass,acccity])
+
+// Never use var, due to issue with block scope and functional scope
