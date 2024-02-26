@@ -170,7 +170,6 @@
   // console.log(number)
 })
 
-
 // .filter()
 
 const nums = [1, 2, 3, 5, 6, 78, 9]
@@ -202,4 +201,3 @@ console.log(result)
 
 // let names = result.map (actor => actor).join(', ')
 // app.innerHTML = `<h1>${names}</h1>`
-
