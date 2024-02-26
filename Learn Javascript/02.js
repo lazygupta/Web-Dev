@@ -14,5 +14,5 @@ let state
 
 // Object
 
-
-console.log(typeof(4))
+console.log(typeof null) // Object type
+console.log(typeof undefined) // undefined type
