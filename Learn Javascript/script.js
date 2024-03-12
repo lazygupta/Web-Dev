@@ -166,38 +166,51 @@
 
 // .map()
 
-[1, 2, 4, 5, 6, 7].map(number => {
-  // console.log(number)
-})
+// [1, 2, 4, 5, 6, 7].map(number => {
+//   // console.log(number)
+// })
 
-// .filter()
+// // .filter()
 
-const nums = [1, 2, 3, 5, 6, 78, 9]
-nums.filter(num => num >=2 && num<=8)
+// const nums = [1, 2, 3, 5, 6, 78, 9]
+// nums.filter(num => num >=2 && num<=8)
 
-const actors = [
-  {name: 'johnny', networth: 200000},
-  {name: 'Ankit', networth:7000},
-  {name: 'Leo', networth:1000000},
-  {name: 'Leos', networth:234000},
-  {name: 'Leon', networth:46000},
-  {name: 'Leom', networth:770000},
-  {name: 'Leok', networth:723000},
-  {name: 'Leou', networth:70070}
-]
+// const actors = [
+//   {name: 'johnny', networth: 200000},
+//   {name: 'Ankit', networth:7000},
+//   {name: 'Leo', networth:1000000},
+//   {name: 'Leos', networth:234000},
+//   {name: 'Leon', networth:46000},
+//   {name: 'Leom', networth:770000},
+//   {name: 'Leok', networth:723000},
+//   {name: 'Leou', networth:70070}
+// ]
 
-const func = (actors) => {
-  let res = []
-  actors.filter( num => {
-    if(num.networth < 1000000000){
-      res.push(`${num.name}: ${num.networth}`)
-    }
-  })
-  return res
-}
+// const func = (actors) => {
+//   let res = []
+//   actors.filter( num => {
+//     if(num.networth < 1000000000){
+//       res.push(`${num.name}: ${num.networth}`)
+//     }
+//   })
+//   return res
+// }
 
-let result = func(actors)
-console.log(result)
+// let result = func(actors)
+// console.log(result)
 
 // let names = result.map (actor => actor).join(', ')
 // app.innerHTML = `<h1>${names}</h1>`
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('What is your name? ', (answer) => {
+  console.log(`Hello, ${answer}!`);
+  rl.close();
+});
+
