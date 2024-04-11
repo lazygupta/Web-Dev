@@ -15,7 +15,7 @@ const allarr = [...name, ...relation] // New way of concatenating
 
 const another_array = [1,2,3,[5,6],[7,8,[9,10]]]
 
-const real = another_array.flat(Infinity)
+const real = another_array.flat(Infinity) // Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth
 // console.log(another_array);
 // console.log(real);
 
