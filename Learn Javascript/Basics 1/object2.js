@@ -71,13 +71,27 @@ const users= [
     }
 ]
 
-console.log(users[1].email)
-console.log(tinderuser);
+// console.log(users[1].email)
+// console.log(tinderuser);
 
-console.log(Object.values(tinderuser)); //Displays the values of object in an array
-console.log(Object.keys(tinderuser)); // Displays the keys of object in an array
-console.log((Object.keys(tinderuser)).length); 
+// console.log(Object.values(tinderuser)); //Displays the values of object in an array
+// console.log(Object.keys(tinderuser)); // Displays the keys of object in an array
+// console.log((Object.keys(tinderuser)).length); 
 
-console.log(Object.entries(tinderuser)); // Every key value in array
+// console.log(Object.entries(tinderuser)); // Every key value in array
 
-console.log(tinderuser.hasOwnProperty('id')); // Check for the property is present or not in tinderuser
+// console.log(tinderuser.hasOwnProperty('id')); // Check for the property is present or not in tinderuser
+
+
+const course ={
+    couursename: "JS Learning",
+    price: "300",
+    courseInstructor: "Ankit"
+}
+
+const { courseInstructor} = course// De-structuring of a object
+console.log(courseInstructor);
+
+const { courseInstructor: abc} = course // De-structuring of a object
+console.log(abc);
+
