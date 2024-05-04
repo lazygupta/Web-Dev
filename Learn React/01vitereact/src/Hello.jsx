@@ -1,9 +1,9 @@
 
 
-const Hello = () => {
+const Hello = () => { // React component should be starting with capital letter
   return (
     <>
-    <h1>Hello World</h1>
+    <h1>This is another component</h1>
     </>
   )
 }
