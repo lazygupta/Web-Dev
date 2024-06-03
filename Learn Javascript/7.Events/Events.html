@@ -125,18 +125,20 @@
     //   }, true)
 
     document.querySelector('#images').addEventListener('click', (e) => {
+        // console.log(e);
+        // console.log(e.target);
         console.log(e.target.parentNode);
-        const ele = e.target.src
-        ele.innerHTML = 'www.google.com'
-        console.log(ele);
+        // const ele = e.target.src
+        // ele.innerHTML = 'www.google.com'
+        // console.log(ele);
+        const removePic = e.target.parentNode;
 
-        // if (e.target.tagName == 'A') {
-        //     console.log(e.target.tagName)
-        //     console.log(e.target.id)
-        //     const removePic = e.target.parentNode;
-        //     removePic.remove()
-        // }
-        // console.log(e.target.tagName)
+        if (e.target.tagName == 'IMG') { 
+            console.log(e.target.tagName)
+            console.log(e.target.id)
+            const removePic = e.target.parentNode;
+            removePic.remove()
+        }
         //OR
         // removePic.parentNode.removeChild(removePic)
     })

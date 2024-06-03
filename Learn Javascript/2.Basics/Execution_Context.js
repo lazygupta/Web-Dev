@@ -4,7 +4,7 @@
 // Two Phases
 
 // Global Execution Context first made which is kept in "this"
-// In browser Global EC is window
+// In browser Global Execution Context is window
 
 // Function Execution Context
 
