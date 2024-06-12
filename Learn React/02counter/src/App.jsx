@@ -12,8 +12,7 @@ function App() {
 // Clicking onebutton changes eveyrthing everywhere, This is managed by React
 // Hooks controls this
   const addValue = () =>{
-    
-    setCounter(counter+1)
+    setCounter((prevCounter) => prevCounter+1)
     setCounter(counter+1)
     setCounter(counter+1)
     setCounter(counter+1)
