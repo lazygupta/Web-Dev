@@ -44,7 +44,7 @@ const books = [
 
 let userBooks = books.filter((item) => (item.genre == 'Science'))
 
-  userBooks = books.filter( (bk) => { 
+userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
 
