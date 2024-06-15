@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: white">Choose Start to change the background every one second and stop to stop those process</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <h2></h2>
+</body>
+<script>
+    let colorGenerator = () =>{
+        const hex = "012345ABCDEF6789"
+        let color = "#"
+        for(let i=0; i<6 ; i++){
+            color += hex[Math.floor(Math.random() * 16)]
+        }
+        return color;
+        console.log(color)
+    }
+    let intervalId
+    const startColor = () =>{
+        // document.querySelector("h2").innerHTML = "Started Changing Colors"
+        if(!intervalId){
+            intervalId = setInterval(changeBGcolor,1000)
+        } 
+       function changeBGcolor (){
+            document.body.style.backgroundColor = colorGenerator();
+            console.log(document.body.style.backgroundColor)
+        }
+        
+    }
+
+    const stopColor = () =>{
+        // document.querySelector("h2").innerHTML = "Stopped";
+        clearInterval(intervalId);
+        intervalId = null
+    }
+
+    document.querySelector("#start").addEventListener('click', startColor);
+
+    document.querySelector("#stop").addEventListener('click', stopColor);
+</script>
+</html>
