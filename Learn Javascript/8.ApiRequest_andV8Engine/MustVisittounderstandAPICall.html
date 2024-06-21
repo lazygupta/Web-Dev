@@ -42,12 +42,12 @@
     xhr.open('GET',requestURL) // Takes two parameters (Method and API URL)
     console.log(xhr.readyState);
     let data
-    const selectButton = document.querySelector("#click");
     xhr.onreadystatechange = function() {
         console.log(this.readyState);
         if(xhr.readyState === xhr.DONE){
             // const data1 = this.responseText
             // console.log(typeof data1);
+
             data = JSON.parse(this.responseText) // String changes to Object type
             
             console.log(typeof data);
