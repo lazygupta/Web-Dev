@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+    <style>
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .container {
+          padding: 2px 16px;
+        }
+        </style>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="card">
+        <button id="click"> Click Here
+        <img src="" style="width:100%">
+        <div class="container">
+          <h4></h4>
+          <h4></h4>
+          <h4></h4>
+          <p></p> 
+          </div>
+        </button>
+        </div>
+      </div>
+<script>
+    const name = document.querySelectorAll("h4")
+    const photo = document.querySelector("img")
+    const requestURL = "https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest();
+    console.log(xhr.readyState);
+    xhr.open('GET',requestURL) // Takes two parameters (Method and API URL)
+    console.log(xhr.readyState);
+    let data
+    const selectButton = document.querySelector("#click");
+    xhr.onreadystatechange = function() {
+        console.log(this.readyState);
+        if(xhr.readyState === xhr.DONE){
+            // const data1 = this.responseText
+            // console.log(typeof data1);
+            data = JSON.parse(this.responseText) // String changes to Object type
+            
+            console.log(typeof data);
+            console.log(data.bio);
+        }
+    }
+
+    document.querySelector("#click").addEventListener('click' , function() {
+        photo.src = `${data.avatar_url}`
+        name[0].innerHTML = `Name: ${data.name}`
+        name[1].innerHTML = `Followers Count: ${data.followers}`
+        name[2].innerHTML = `Bio: ${data.bio}`
+    })
+    
+    xhr.send()
+
+</script>
+</body>
+
+</html>
