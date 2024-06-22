@@ -47,9 +47,9 @@
 // })
 
 // promiseFour
-//   .then((user) =>{
+//   .then((user) =>{ .. user is a response object
 //     console.log(user);
-//     return user.username
+//     return user.username // It returns a response object to object in json format
 // }).then((username) => {
 //     console.log(username);
 // }).catch((error) => {
@@ -113,27 +113,29 @@
 // another way
 
 
-const promiseSix = new Promise( function (resolve,reject) {
-    resolve(fetch("https://api.github.com/users/hiteshchoudhary"))
+// const promiseSix = new Promise( function (resolve,reject) {
+//     resolve(fetch("https://api.github.com/users/hiteshchoudhary"))
+// })
+
+// promiseSix.then((data) => {
+//     const data1 = data.json()
+//     return data1;
+// })
+// .then((datafiltered) => {
+//     console.log(datafiltered);
+// })
+
+// Another Way
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((response) => { // response is a response object
+    return response.json() // we convert the response object in fromatted json object
+})
+.then((data)=> {
+    console.log(data);
+})
+.catch((error) => {
+    console.log("Error:");
 })
 
-promiseSix.then((data) => {
-    // console.log(typeof data);
-    const data1 = data.json()
-    // console.log(typeof data1);
-    return data1;
-})
-.then((datafiltered) => {
-    console.log(datafiltered);
-})
-
-// fetch("https://jsonplaceholder.typicode.com/users")
-// .then((response) => {
-//     return response.json()
-// })
-// .then((data)=> {
-//     console.log(data);
-// })
-// .catch((error) => {
-//     console.log("Error:");
-// })
+// Fetch always executes first
