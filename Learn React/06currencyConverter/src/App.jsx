@@ -26,14 +26,18 @@ function App() {
   }
 
   return (
+    
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        className="w-full h-screen flex flex-wrap items-center justify-center bg-cover bg-no-repeat"
         style={{
             backgroundImage: `url('https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
     >
-        <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="h-screen flex items-center pr-4 space-x-5">
+        <div className="w-48 h-48 flex-shrink-0 ml-4">
+          <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="Sample Image" className="w-full h-full object-cover rounded-lg" />
+        </div>
+            <div className="w-full max-w-md border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -80,8 +84,9 @@ function App() {
                     </button>
                 </form>
             </div>
+           
         </div>
-    </div>
+        </div>
 );
 }
 
