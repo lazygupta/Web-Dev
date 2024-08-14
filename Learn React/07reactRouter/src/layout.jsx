@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
     <Header/>
-    <Outlet/>
+    <Outlet/> {/*It can be used to do nesting */}
     <Footer/>
     </>
   )
