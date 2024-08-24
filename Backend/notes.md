@@ -9,4 +9,3 @@ All the details about the project  -->
 # dependencies - Package and its dependencies
 
 # devdependencies - Then packages which are only use suring the development, and after uploading or deploying the project this will not be used up
-
