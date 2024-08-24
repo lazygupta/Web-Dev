@@ -1,6 +1,8 @@
 ## javascript and classes
 # OOP
-Object
+## Object
+
+
 collection of properties and methods
 toLowerCase
 why use OOP

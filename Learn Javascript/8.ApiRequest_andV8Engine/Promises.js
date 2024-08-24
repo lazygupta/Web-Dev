@@ -74,56 +74,56 @@
 // using of Async and Await
 // Does the same thing, But doesnt handles error gracefully
 
-// async function consumePromiseFive() {
-//     try {
-//         const response = await promiseFive
-//         console.log(response);
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
+async function consumePromiseFive() {
+    try {
+        const response = await promiseFive
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-// consumePromiseFive()
+consumePromiseFive()
 
 
 
 // ------------------------------- //
 
 
-// async function getAllUsers() {
-//     try {
-//         const response = await fetch("https://jsonplaceholder.typicode.com/users")
-//         // console.log(response);
-//         const data = await response.json()
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error);
-//     }
-// }
+async function getAllUsers() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users")
+        // console.log(response);
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
 
-// fetch("https://jsonplaceholder.typicode.com/users")
-// .then( (response) => {
-//     return response.json()
-// })
-// .then((data) => {
-//     console.log(data);
-// })
-// .catch( (error) => console.log("Error:"))
+fetch("https://jsonplaceholder.typicode.com/users")
+.then( (response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch( (error) => console.log("Error:"))
 
 // another way
 
 
-// const promiseSix = new Promise( function (resolve,reject) {
-//     resolve(fetch("https://api.github.com/users/hiteshchoudhary"))
-// })
+const promiseSix = new Promise( function (resolve,reject) {
+    resolve(fetch("https://api.github.com/users/hiteshchoudhary"))
+})
 
-// promiseSix.then((data) => {
-//     const data1 = data.json()
-//     return data1;
-// })
-// .then((datafiltered) => {
-//     console.log(datafiltered);
-// })
+promiseSix.then((data) => {
+    const data1 = data.json()
+    return data1;
+})
+.then((datafiltered) => {
+    console.log(datafiltered);
+})
 
 // Another Way
 
