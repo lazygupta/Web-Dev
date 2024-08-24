@@ -4,8 +4,8 @@
 // manages eveyrthing from receving the request and giving the response
 
 // Middleware - Work done between sending request and just before reaching the routes server
-## Usecases
 
+## Usecases
 
 <!-- Middlewares  request aur response ke beech mein communication handle karta hai. Socho ise ek chowkidaar ki tarah jo gate ke andar jaane se pehle aur baahar aane se pehle sab cheezein check karta hai.
 
