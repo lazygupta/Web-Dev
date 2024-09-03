@@ -47,6 +47,8 @@ app.post("/update/:userid", async (req, res) => {
       email,
     }
   );
+  console.log(user);
+  
   res.redirect("/read");
 });
 
