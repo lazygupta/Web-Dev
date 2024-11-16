@@ -8,10 +8,13 @@ const myNumbers = [1,2,3,4,5,6,7,8,9]
 
 
 // Chaining
-const newNums = myNumbers
-                    .map ( (num) => (num*10)) // returns to next map
-                    .map((num) => num+1) // returns value to next filter
-                    .filter ( (num) => (num>=35))
+// const newNums = myNumbers
+//                     .map ( (num) => (num*10)) // returns to next map
+//                     .map((num) => num+1) // returns value to next filter
+//                     .filter ( (num) => (num>=35))
+
+
+const newNums = myNumbers.map(num => (num))
 
 
 console.log(newNums);
